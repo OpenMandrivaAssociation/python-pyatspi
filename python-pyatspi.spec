@@ -1,5 +1,5 @@
 %define name python-pyatspi
-%define version 0.3.4
+%define version 0.3.6
 %define release %mkrel 1
 %define oname pyatspi
 
