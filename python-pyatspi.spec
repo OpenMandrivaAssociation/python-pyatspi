@@ -1,5 +1,5 @@
 %define name python-pyatspi
-%define version 0.3.90
+%define version 0.3.91
 %define release %mkrel 1
 %define oname pyatspi
 
@@ -42,4 +42,4 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %doc README AUTHORS
-%py_puresitedir/%{oname}
+%py_puresitedir/%{oname}_dbus
