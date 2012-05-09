@@ -1,6 +1,6 @@
 %define name python-pyatspi
 %define version 0.4.1
-%define release %mkrel 2
+%define release %mkrel 3
 %define oname pyatspi
 
 Summary: D-Bus AT-SPI - Python bindings
