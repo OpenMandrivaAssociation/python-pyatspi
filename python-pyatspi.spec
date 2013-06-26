@@ -1,21 +1,17 @@
-%define name python-pyatspi
-%define version 0.4.1
-%define release %mkrel 2
 %define oname pyatspi
 
 Summary: D-Bus AT-SPI - Python bindings
-Name: %{name}
-Version: %{version}
-Release: %{release}
+Name:    python-pyatspi
+Version: 0.4.1
+Release: 3
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{oname}/%{oname}-%{version}.tar.bz2
 License: LGPLv2
 Group: Development/Python
 Url: http://www.linuxfoundation.org/en/AT-SPI_on_D-Bus
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
 BuildRequires:	python-devel
 BuildRequires:  dbus-glib-devel
-BuildRequires:  gtk+2-devel
+BuildRequires:  pkgconfig(gtk+-2.0)
 BuildRequires:  libxml2-devel
 BuildRequires:  python-dbus
 Requires:  python-dbus
@@ -33,14 +29,9 @@ for its transport protocol.
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc README AUTHORS
 %py_puresitedir/%{oname}_dbus
 
