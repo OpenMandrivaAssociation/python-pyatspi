@@ -2,9 +2,9 @@
 
 Summary: D-Bus AT-SPI - Python bindings
 Name:    python-pyatspi
-Version: 0.4.1
-Release: 3
-Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{oname}/%{oname}-%{version}.tar.bz2
+Version: 2.9.2
+Release: 1
+Source0: ftp://ftp.gnome.org:21/pub/GNOME/sources/pyatspi/2.9/pyatspi-%{version}.tar.xz
 License: LGPLv2
 Group: Development/Python
 Url: http://www.linuxfoundation.org/en/AT-SPI_on_D-Bus
@@ -91,5 +91,6 @@ for its transport protocol.
 * Tue Dec 22 2009 Götz Waschk <waschk@mandriva.org> 0.1.4-1mdv2010.1
 + Revision: 481262
 - import python-pyatspi
+
 
 
