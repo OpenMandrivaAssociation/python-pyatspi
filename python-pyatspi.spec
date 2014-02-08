@@ -3,7 +3,7 @@
 Summary: D-Bus AT-SPI - Python bindings
 Name:    python-pyatspi
 Version: 0.4.1
-Release: 3
+Release: 4
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{oname}/%{oname}-%{version}.tar.bz2
 License: LGPLv2
 Group: Development/Python
